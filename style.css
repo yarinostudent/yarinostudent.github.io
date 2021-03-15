@@ -689,10 +689,10 @@ hr:before {
   .sponserSection .container .sponsers {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(100px, 1fr))[3];
-        grid-template-columns: repeat(3, minmax(100px, 1fr));
-    -ms-grid-rows: (minmax(100px, 1fr))[auto-fit];
-        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    -ms-grid-columns: (minmax(50px, 1fr))[3];
+        grid-template-columns: repeat(3, minmax(50px, 1fr));
+    -ms-grid-rows: (minmax(50px, 1fr))[auto-fit];
+        grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
     text-align: center;
     -webkit-column-gap: 180px;
             column-gap: 180px;
@@ -730,9 +730,7 @@ hr:before {
         align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
-    width: 100%;
     max-width: 400px;
-    height: 100%;
     max-height: 350px;
     background-color: rgba(255, 155, 0, 0.3);
     padding: 20px;
