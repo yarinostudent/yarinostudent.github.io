@@ -475,8 +475,8 @@ hr:before {
     display: grid;
     -ms-grid-columns: (minmax(150px, 1fr))[3];
         grid-template-columns: repeat(3, minmax(150px, 1fr));
-    -ms-grid-rows: (minmax(2000px, 1fr))[auto-fit];
-        grid-template-rows: repeat(auto-fit, minmax(2000px, 1fr));
+    -ms-grid-rows: (minmax(200px, 1fr))[auto-fit];
+        grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     padding-left: 0;
     padding-right: 0;
     height: auto;

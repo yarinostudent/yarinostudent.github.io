@@ -427,7 +427,7 @@ hr:before {
         .container-fluid {
             display: grid;
             grid-template-columns: repeat(3, minmax(150px, 1fr));
-            grid-template-rows: repeat(auto-fit, minmax(2000px, 1fr));
+            grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
             padding-left: 0;
             padding-right: 0;
             height: auto;
