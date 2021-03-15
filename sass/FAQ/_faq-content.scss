@@ -1,0 +1,88 @@
+#faqBody {
+    background-image: url("/sass/Media/faq.jpg");
+    @include backImg();
+
+}
+
+.faqHeader {
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.301);
+}
+
+h2 {
+    font-family: $fontRobo;
+}
+
+.accordContainer {
+    // padding: 0 400px;
+    margin: 0 auto;
+
+    .faqHead {
+        text-align: center;
+
+        img {
+            object-fit: cover;
+            width: 250px;
+            height: 200px;
+
+        }
+    }
+
+    .myAccord {
+        background-image: url("/sass/Media/faq.jpg");
+        @include backImg();
+        border-radius: 50px;
+        text-align: center;
+        // display: grid;
+        // grid-template-columns: 1fr;
+        // grid-template-rows: repeat(11, 1fr);
+
+        .myCard {
+            background-color: rgba(163, 49, 148, 0.9);
+            font-size: 1rem;
+            // font-weight: bold;
+            margin-bottom: 15px;
+            border-radius: 10px;
+
+            &:nth-child(even) {
+                background-color: rgba(49, 148, 62, 0.8);
+
+                .card-header {
+
+                    h2 {
+                        .btn {
+                            // color: rgb(163, 49, 148);
+                            color: black;
+                        }
+                    }
+                }
+            }
+
+            .card-header {
+
+                h2 {
+                    .btn {
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                        // color: rgb(18, 128, 33);
+                        color: black;
+                    }
+
+                }
+            }
+
+            .card-body {
+                background-color: rgba(255, 255, 255, 0.603);
+            }
+
+        }
+    }
+}
+
+@include lg {
+    .myAccord {
+
+        // background-color: red;
+        // padding: 200px;
+        .myCard {}
+    }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Contact" content="Contact Us" />
+    <link rel="shortcut icon" type="image/png" href="./sass/Media/favicon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Contact Us</title>
+    <style>
+        header {
+            background: none;
+        }
+    </style>
+</head>
+
+<body id="contactBody">
+    <!-- Top BTN Function -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">&#129045;</button>
+    <!-- ------------------Navbar------------------ -->
+    <header class="contactHeader">
+        <div class="container-fluid p-0 myContainer">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+                <a class="navbar-brand" href="#"><img id="logo" src="/sass/Media/logo-s-better-c.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">&#9776;</span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active ">
+                            <a class="nav-link" href="./homePage.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./aboutPage.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./mediaPage.html">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./faqPage.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactPage.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="myUl my-2 my-lg-0">
+                        <a href="https://www.mardigrasneworleans.com/packages"><button type="button my-2 my-sm-0"
+                                class="myBtn"><span>Buy Package
+                                    Now!</span></button></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- ------------------Form------------------ -->
+    <section class="container-fluid formSection">
+        <div class="feedback" data-aos="fade-right" data-aos-duration="1500">
+            <h1>Leave Us a Feedback</h1>
+        </div>
+        <div class="container contact" data-aos="flip-down" data-aos-duration="1500">
+            <div class="contact-info">
+                <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image" alt="contact letter img">
+                <h1>Contact Us</h1>
+                <h2>For press inquiries, please contact press@mardigrasneworleans.com. For all other questions, please
+                    use the form below.</h2>
+                <ul class="menu simple">
+                    <li><a href="https://www.facebook.com/MardiGrasNewOrleans"><i class="fab fa-facebook"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/mardigrasneworleans/"><i class="fab fa-instagram"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q"><i class="fab fa-youtube"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://twitter.com/MardiGrasNOLA"><i class="fab fa-twitter"
+                                aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label class="control-label" for="fname">Name:</label>
+                    <input type="text" class="form-control" id="fname" placeholder="Enter Name" name="fname" required>
+                    <small>Error MSG</small>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="phone">phone:</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="ex: 050-123-4567" name="phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <small>Error MSG</small>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="email">Email:</label>
+
+                    <input type="email" class="form-control" id="email" placeholder="ex: name@root.com" name="email"
+                        required>
+                    <small>Error MSG</small>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="comment">Comment:</label>
+                    <textarea class="form-control" rows="3" id="comment" placeholder="Enter Your Message Here"
+                        required></textarea>
+                    <small>Error MSG</small>
+                </div>
+                <div class="form-group formBtn">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- ------------------Footer------------------ -->
+    <a href="" id="footerAnchor"></a>
+    <footer class="social-footer">
+        <div class="social-footer-left">
+            <a href="#"><img class="logo" src="/sass/Media/logo2021-removebg-removebg.png" alt="logo"></a>
+        </div>
+        <div class="copyright">&copy; Copyrights: <a href="https://www.linkedin.com/in/yarin-ordman-847a33202"> Yarin
+                Ordman</a>
+
+        </div>
+        <div class="social-footer-icons">
+            <ul class="menu simple">
+                <li><a href="https://www.facebook.com/MardiGrasNewOrleans"><i class="fab fa-facebook"
+                            aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/mardigrasneworleans/"><i class="fab fa-instagram"
+                            aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q"><i class="fab fa-youtube"
+                            aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://twitter.com/MardiGrasNOLA"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="./scripts/navbarResponsive.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/topBtn.js"></script>
+    <script src="./scripts/validate.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

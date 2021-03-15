@@ -1,0 +1,244 @@
+header {
+    height: 5%;
+    width: 100vw;
+    display: flex;
+    padding: 0 10px 0 0;
+
+    .myContainer {
+
+        .navbar-brand {
+            #logo {
+                border-radius: 50%;
+                padding: unset;
+                margin: unset;
+                height: 100px;
+                object-fit: cover;
+            }
+        }
+
+        .navbar-toggler {
+            position: fixed;
+            top: 40px;
+            right: 15px;
+            z-index: 2000;
+
+            .navbar-toggler-icon {
+                background: none;
+                text-shadow: 0 0 16px $white;
+                color: $purple;
+                font-size: 2.6rem;
+                height: unset;
+                width: unset;
+            }
+        }
+
+        .myBg {
+            padding: 0 13px;
+            border-radius: 20px;
+            color: $black;
+            background-color: $yellow;
+            font-size: $textSize;
+            font-family: $fontHenny;
+            box-shadow: 2px 5px 16px $green;
+        }
+
+        .fixed-top {
+            top: 100px;
+            right: 0;
+        }
+
+        .navbar-collapse {
+
+            .navbar-nav {
+
+                .nav-item {
+
+                    a {
+                        margin: 5px auto;
+                        margin-right: 10px;
+                        width: 120px;
+                        font-size: 1rem;
+                        box-shadow: 5px 8px 14px $purple;
+                        text-decoration: none;
+                        text-align: center;
+                        border: 1px solid #fff;
+                        border-radius: 20px;
+                        padding: 0 13px;
+                        color: $black;
+                        background-color: #c0c1c28e;
+                        font-family: $fontHenny;
+
+                        &:hover {
+                            background-color: #c0c1c2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include md {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        height: 5%;
+        width: 100vw;
+        display: flex;
+
+        .myContainer {
+
+            .navbar-brand {
+                #logo {
+                    border-radius: 50%;
+                    padding: unset;
+                    margin: unset;
+                    height: 100px;
+                    object-fit: cover;
+                }
+            }
+
+            .navbar-toggler {
+                position: fixed;
+                top: 40px;
+                right: 15px;
+                z-index: 2000;
+
+                .navbar-toggler-icon {
+                    background: none;
+                    text-shadow: 0 0 16px $white;
+                    color: $purple;
+                    font-size: 3rem;
+                    height: unset;
+                    width: unset;
+                }
+            }
+
+
+            .myBg {
+                padding: 0 13px;
+                border-radius: 20px;
+                color: $black;
+                background-color: $yellow;
+                font-size: $textSize;
+                font-family: $fontHenny;
+                box-shadow: 2px 5px 16px $green;
+            }
+
+            .fixed-top {
+                top: 100px;
+                right: 0;
+            }
+
+            .navbar-collapse {
+
+
+                .myUl {
+                    display: none;
+                }
+
+                .navbar-nav {
+
+                    .nav-item {
+
+                        a {
+                            margin: 5px auto;
+                            margin-right: 10px;
+                            width: 120px;
+                            font-size: 1.5rem;
+                            box-shadow: 5px 8px 14px $purple;
+                            text-decoration: none;
+                            text-align: center;
+                            border: 1px solid #fff;
+                            border-radius: 20px;
+                            padding: 0 13px;
+                            color: $black;
+                            background-color: #c0c1c28e;
+                            font-family: $fontHenny;
+
+                            &:hover {
+                                background-color: #c0c1c2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include lg {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        height: 5%;
+        width: 100vw;
+        display: flex;
+
+        .myContainer {
+
+            .navbar-brand {
+                #logo {
+                    border-radius: 50%;
+                    padding: unset;
+                    margin: unset;
+                    height: 100px;
+                    object-fit: cover;
+                }
+            }
+
+            .myUl {
+                display: unset;
+
+                .myBtn {
+                    padding: 0 13px;
+                    border-radius: 20px;
+                    color: $black;
+                    background-color: $yellow;
+                    font-size: $textSize;
+                    font-family: $fontHenny;
+                    box-shadow: 2px 5px 16px $green;
+
+                    &:hover {
+                        background-color: #f2cc0fb6;
+                    }
+                }
+            }
+
+
+            .navbar-nav {
+                margin: 0 auto;
+
+                .nav-item {
+                    a {
+                        box-shadow: 5px 8px 14px $purple;
+                        text-decoration: none;
+                        text-align: center;
+                        border: 1px solid #fff;
+                        margin-right: 10px;
+                        border-radius: 20px;
+                        padding: 0 13px;
+                        color: $black;
+                        background-color: #c0c1c28e;
+                        font-size: 3rem;
+                        font-family: $fontHenny;
+
+                        &:hover {
+                            background-color: #c0c1c2;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

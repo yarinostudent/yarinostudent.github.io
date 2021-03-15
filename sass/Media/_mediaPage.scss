@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100%;
+}
+
+
+//media queries
+@mixin sm {
+    @media (max-width: 576.98px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: 577px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin backImg($backPos:center, $backSize:cover, $backAttach: fixed) {
+    background-position: $backPos;
+    background-size: $backSize;
+    background-repeat: no-repeat;
+    background-attachment: $backAttach;
+}
+
+//colors
+$black: #0D0D0D;
+$white: #f2f2f2;
+$yellow: #f2cc0f;
+$green: #8cbf3f;
+$purple: #9453A6;
+
+//font-families
+$fontPataya:'Pattaya',
+sans-serif;
+$fontHenny: 'Henny Penny',
+cursive;
+$fontRobo: 'Roboto',
+sans-serif;
+//font-sizes
+$primTitle: 2rem;
+$secTitle: 1.5rem;
+$textSize: 1.3rem;
+@import "./media-content";

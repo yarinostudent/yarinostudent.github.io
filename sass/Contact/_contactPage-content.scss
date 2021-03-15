@@ -1,0 +1,275 @@
+#contactBody {
+    background-image: url("/sass/Media/whitePhoneBack.jpg");
+    @include backImg();
+    box-shadow: inset 0 0 0 2000px rgba(99, 98, 98, 0.1);
+
+}
+
+.contactHeader {
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.301);
+
+}
+
+.formSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    padding-left: 0;
+
+
+    .feedback {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center;
+        justify-self: start;
+        text-align-last: left;
+
+        h1 {
+            font-size: 1.3rem;
+            width: 250px;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: rgba(255, 155, 0, 0.7);
+        }
+    }
+
+    .contact {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        padding: 10%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 350px;
+        box-shadow: inset 0px 3px 16px 10px rgba(63, 62, 62, 0.74);
+        border-radius: 100px;
+
+        .contact-info {
+            background: #ff9900e5;
+            padding: 4%;
+            border-top-left-radius: 0.5rem;
+            border-bottom-left-radius: 0.5rem;
+            text-align: center;
+            font-size: 1rem;
+
+            img {
+                margin-bottom: 5%;
+            }
+
+            h1 {
+                font-size: 1.2rem;
+                margin-bottom: 5%;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+
+            .menu {
+                display: flex;
+                justify-content: space-evenly;
+                list-style-type: none;
+                margin-top: 10px;
+
+                li:last-of-type {
+                    margin-right: 0;
+                }
+
+                .fab {
+                    font-size: 2rem;
+                    color: $purple;
+                }
+            }
+        }
+
+        .contact-form {
+
+            background: rgba(108, 3, 117, 0.664);
+            padding: 1%;
+            border-top-right-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+
+            .form-group {
+                text-align: center;
+                line-height: 0.3;
+                margin-bottom: 10px;
+
+                label {
+                    font-weight: 600;
+                    font-size: 1rem;
+                }
+
+                button {
+                    // margin: 0 auto;
+                    background: #ff9b00;
+                    color: #fff;
+                    font-weight: 600;
+                    width: 25%;
+                }
+
+                button:focus {
+                    box-shadow: none;
+                }
+            }
+
+            .form-group.success input {
+                border-color: teal;
+            }
+
+            .form-group.error input {
+                border-color: crimson;
+            }
+
+            .form-group small {
+                color: crimson;
+                font-size: 1rem;
+                position: relative;
+                bottom: 0;
+                left: 0;
+                visibility: hidden;
+            }
+
+            .form-group.error small {
+                visibility: visible;
+            }
+        }
+    }
+}
+
+
+@include lg {
+    // #contactBody {
+    //     background-image: url("/style/Media/contactBack.jpg");
+    //     @include backImg();
+    // }
+
+    .formSection {
+        padding-left: 0;
+
+
+        .feedback {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            align-self: center;
+            justify-self: start;
+            text-align-last: left;
+
+            h1 {
+                width: 350px;
+                padding: 30px;
+                border-radius: 0;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                background-color: rgba(255, 155, 0, 0.7);
+                font-size: 2rem;
+            }
+
+            // }rgba(108, 3, 117, 0.664);
+        }
+
+
+        .contact {
+            grid-column: 1/3;
+            grid-row: 2/3;
+            padding: 4%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 500px;
+            box-shadow: inset 0px 3px 16px 10px rgba(63, 62, 62, 0.74);
+            border-radius: 100px;
+
+
+
+
+            .contact-info {
+                background: #ff9900e5;
+                padding: 3%;
+                border-top-left-radius: 0.5rem;
+                border-bottom-left-radius: 0.5rem;
+                text-align: center;
+                font-size: 2.2rem;
+
+                img {
+                    margin-bottom: 15%;
+                }
+
+                h1 {
+                    font-size: 2rem;
+                    margin-bottom: 10%;
+                }
+
+                h2 {
+                    font-size: 1.3rem;
+                }
+
+                .menu {
+                    display: flex;
+                    justify-content: space-evenly;
+                    list-style-type: none;
+                    margin-top: 80px;
+
+                    li:last-of-type {
+                        margin-right: 0;
+                    }
+
+                    .fab {
+                        margin-right: 15px;
+                        font-size: 3rem;
+                        color: $purple;
+
+                    }
+                }
+            }
+
+            .contact-form {
+
+                background: rgba(108, 3, 117, 0.664);
+                padding: 3%;
+                border-top-right-radius: 0.5rem;
+                border-bottom-right-radius: 0.5rem;
+
+                .form-group {
+                    text-align: left;
+                    line-height: 0.7;
+
+                    label {
+                        font-weight: 600;
+                        font-size: 1.5rem;
+                    }
+
+                    button {
+                        // margin: 0 auto;
+                        background: #ff9b00;
+                        color: #fff;
+                        font-weight: 600;
+                        width: 25%;
+                    }
+
+                    button:focus {
+                        box-shadow: none;
+                    }
+                }
+
+                .form-group.success input {
+                    border-color: teal;
+                }
+
+                .form-group.error input {
+                    border-color: crimson;
+                }
+
+                .form-group small {
+                    color: crimson;
+                    font-size: 1.1rem;
+                    position: relative;
+                    bottom: 0;
+                    left: 0;
+                    visibility: hidden;
+                }
+
+                .form-group.error small {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
