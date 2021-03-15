@@ -746,8 +746,9 @@ hr:before {
             filter: blur(0);
   }
   .sponserSection .container .sponsers .sponser img {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
   }
   .sponserSection .container .sponsers .activateSponser {
     border: 3px solid #6c0375;
