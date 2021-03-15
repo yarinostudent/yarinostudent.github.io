@@ -475,8 +475,8 @@ hr:before {
     display: grid;
     -ms-grid-columns: (minmax(150px, 1fr))[3];
         grid-template-columns: repeat(3, minmax(150px, 1fr));
-    -ms-grid-rows: (minmax(50px, 1fr))[auto-fit];
-        grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+    -ms-grid-rows: (minmax(2000px, 1fr))[auto-fit];
+        grid-template-rows: repeat(auto-fit, minmax(2000px, 1fr));
     padding-left: 0;
     padding-right: 0;
     height: auto;
@@ -490,6 +490,7 @@ hr:before {
         align-self: start;
     -ms-grid-column-align: start;
         justify-self: start;
+    height: auto;
   }
   .sOneContainer .container-fluid .welcome h1 {
     font-size: 1.3rem;
@@ -638,6 +639,7 @@ hr:before {
     width: 300px;
     -ms-grid-column-align: center;
         justify-self: center;
+    margin-top: 100px;
   }
   .sOneContainer .container-fluid .trivia .trivia-btn {
     height: 50px;

@@ -427,7 +427,7 @@ hr:before {
         .container-fluid {
             display: grid;
             grid-template-columns: repeat(3, minmax(150px, 1fr));
-            grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+            grid-template-rows: repeat(auto-fit, minmax(2000px, 1fr));
             padding-left: 0;
             padding-right: 0;
             height: auto;
@@ -437,6 +437,7 @@ hr:before {
                 align-self: start;
                 justify-self: start;
                 height: auto;
+
                 h1 {
                     font-size: 1.3rem;
                     width: 300px;
@@ -588,6 +589,7 @@ hr:before {
                 // padding: 20px;
                 // align-self: center;
                 justify-self: center;
+                margin-top: 100px;
 
                 .trivia-btn {
                     height: 50px;
