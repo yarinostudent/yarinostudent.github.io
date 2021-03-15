@@ -730,8 +730,10 @@ hr:before {
         align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
-    width: 330px;
-    height: 330px;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 350px;
     background-color: rgba(255, 155, 0, 0.3);
     padding: 20px;
     border-radius: 50px;
