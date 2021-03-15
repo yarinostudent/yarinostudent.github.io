@@ -426,17 +426,15 @@ hr:before {
 
         .container-fluid {
             display: grid;
-            grid-template-columns: repeat(3, minmax(150px, 1fr));
-            grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(3, minmax(200px, 1fr));
+            grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
             padding-left: 0;
             padding-right: 0;
-            height: auto;
 
             .welcome {
                 grid-column: 1/2;
                 align-self: start;
                 justify-self: start;
-                height: auto;
 
                 h1 {
                     font-size: 1.3rem;
