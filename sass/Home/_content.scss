@@ -425,7 +425,7 @@ hr:before {
         @include backImg();
         display: grid;
         grid-template-columns: repeat(3, minmax(150px, 1fr));
-        grid-template-rows: 200px 1fr;
+        grid-template-rows: 170px 1fr;
         padding-left: 0;
         padding-right: 0;
 
