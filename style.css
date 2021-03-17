@@ -824,6 +824,8 @@ hr:before {
     font-size: 2rem;
   }
   .sponserSection .container-fluid .sponsers .popupContent img {
+    width: 70%;
+    height: 70%;
     margin-left: 10px;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
