@@ -628,10 +628,6 @@ hr:before {
     font-size: 2rem;
     margin-bottom: 0;
   }
-  .sOneContainer .contentBox h1 hr {
-    width: 40%;
-    margin: 0 auto;
-  }
   .sOneContainer .contentBox h2 {
     text-align: center;
     font-size: 1.5rem;
