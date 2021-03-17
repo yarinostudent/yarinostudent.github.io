@@ -743,8 +743,7 @@ hr:before {
                     padding: 10px;
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
-                    grid-template-rows: repeat(3, 1fr);
-                    ;
+                    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
                     row-gap: 50px;
                     // justify-self: space-between;
                     // align-self: center;
