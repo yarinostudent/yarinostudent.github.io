@@ -43,7 +43,7 @@
 //trivia open
 (function triviaOpen() {
     $('.trivia-btn').click(function () {
-        window.open('trivia.html', "Trivia", "height = 500,width = 700")
+        window.open("trivia.html", "Trivia", "height = 500,width = 700")
     })
 })();
 //------------------------------------------------
