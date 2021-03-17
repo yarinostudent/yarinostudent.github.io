@@ -470,8 +470,8 @@ hr:before {
     display: grid;
     -ms-grid-columns: (minmax(150px, 1fr))[3];
         grid-template-columns: repeat(3, minmax(150px, 1fr));
-    -ms-grid-rows: 200px 1fr;
-        grid-template-rows: 200px 1fr;
+    -ms-grid-rows: 170px 1fr;
+        grid-template-rows: 170px 1fr;
     padding-left: 0;
     padding-right: 0;
   }
@@ -766,7 +766,7 @@ hr:before {
     text-align: center;
     width: 50%;
     max-width: 80%;
-    height: 80%;
+    height: auto;
     margin: 5% auto;
     background-color: #e6e1e1;
     -webkit-box-shadow: inset 0px 3px 30px 15px rgba(255, 155, 0, 0.7);
@@ -791,8 +791,8 @@ hr:before {
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
+    -ms-grid-rows: (minmax(50px, 1fr))[auto-fit];
+        grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
     row-gap: 50px;
   }
   .sponserSection .container-fluid .sponsers .popupContent p {
