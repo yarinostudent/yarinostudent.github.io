@@ -556,6 +556,11 @@ hr:before {
                 text-align: center;
                 font-size: $primTitle;
                 margin-bottom: 0;
+
+                hr {
+                    width: 20%;
+                    margin: 0 auto;
+                }
             }
 
             h2 {
