@@ -1,2 +1,0 @@
-# yarinostudent.github.io
- 

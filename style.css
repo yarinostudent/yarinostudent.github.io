@@ -63,16 +63,13 @@ hr:before {
 }
 
 .sOneContainer {
-  height: 100vh;
+  height: auto;
   text-align: center;
   background-image: url("/sass/Media/contact-backImg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-.sOneContainer .container-fluid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,7 +87,7 @@ hr:before {
   padding-right: 0;
 }
 
-.sOneContainer .container-fluid .welcome h1 {
+.sOneContainer .welcome h1 {
   font-size: 1rem;
   width: 250px;
   padding: 20px;
@@ -98,7 +95,7 @@ hr:before {
   background-color: rgba(255, 155, 0, 0.7);
 }
 
-.sOneContainer .container-fluid .hurryUp {
+.sOneContainer .hurryUp {
   font-family: "Henny Penny", cursive;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -117,23 +114,23 @@ hr:before {
   transition: transform .45s ease-in-out, -webkit-transform .45s ease-in-out;
 }
 
-.sOneContainer .container-fluid .hurryUp h2 {
+.sOneContainer .hurryUp h2 {
   font-size: 2rem;
   margin-bottom: 15px;
 }
 
-.sOneContainer .container-fluid .hurryUp:hover {
+.sOneContainer .hurryUp:hover {
   background-color: rgba(255, 155, 0, 0.7);
   border: 4px solid #6c0375;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.sOneContainer .container-fluid .hurryUp:hover #timer div {
+.sOneContainer .hurryUp:hover #timer div {
   background-color: rgba(108, 3, 117, 0.664);
 }
 
-.sOneContainer .container-fluid .hurryUp #timer div {
+.sOneContainer .hurryUp #timer div {
   -webkit-box-shadow: 15px 15px 16px #0D0D0D;
           box-shadow: 15px 15px 16px #0D0D0D;
   background-color: rgba(255, 155, 0, 0.7);
@@ -147,7 +144,7 @@ hr:before {
   font-family: "Pattaya", sans-serif;
 }
 
-.sOneContainer .container-fluid .hurryUp #timer div span {
+.sOneContainer .hurryUp #timer div span {
   display: block;
   height: 100%;
   margin-top: -2px;
@@ -156,7 +153,7 @@ hr:before {
   font-family: "Henny Penny", cursive;
 }
 
-.sOneContainer .container-fluid .weather {
+.sOneContainer .weather {
   margin-top: 10px;
   font-size: 1rem;
   line-height: 0;
@@ -166,19 +163,19 @@ hr:before {
   padding: 20px;
 }
 
-.sOneContainer .container-fluid .weather h1 {
+.sOneContainer .weather h1 {
   font-size: 1.5rem;
 }
 
-.sOneContainer .container-fluid .weather h2 {
+.sOneContainer .weather h2 {
   font-size: 1rem;
 }
 
-.sOneContainer .container-fluid .weather p {
+.sOneContainer .weather p {
   font-size: 1rem;
 }
 
-.sOneContainer .container-fluid .contentBox {
+.sOneContainer .contentBox {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -193,32 +190,32 @@ hr:before {
   padding: 30px;
 }
 
-.sOneContainer .container-fluid .contentBox:hover {
+.sOneContainer .contentBox:hover {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-.sOneContainer .container-fluid .contentBox h1 {
+.sOneContainer .contentBox h1 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 0;
 }
 
-.sOneContainer .container-fluid .contentBox h1 hr {
+.sOneContainer .contentBox h1 hr {
   width: 30%;
   margin: 0 auto;
 }
 
-.sOneContainer .container-fluid .contentBox h2 {
+.sOneContainer .contentBox h2 {
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 0;
 }
 
-.sOneContainer .container-fluid .contentBox p {
+.sOneContainer .contentBox p {
   font-size: 1.1rem;
 }
 
-.sOneContainer .container-fluid .trivia {
+.sOneContainer .trivia {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
@@ -230,7 +227,7 @@ hr:before {
   width: 300px;
 }
 
-.sOneContainer .container-fluid .trivia .trivia-btn {
+.sOneContainer .trivia .trivia-btn {
   height: 30px;
   padding: 10px;
   border-radius: 50px;
@@ -239,7 +236,7 @@ hr:before {
           box-shadow: 0 0 16px black;
 }
 
-.sOneContainer .container-fluid .trivia .trivia-btn:hover {
+.sOneContainer .trivia .trivia-btn:hover {
   background-color: rgba(43, 255, 0, 0.7);
 }
 
@@ -295,10 +292,9 @@ hr:before {
 .sponserSection .container-fluid .sponsers {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(100px, 1fr))[2];
-      grid-template-columns: repeat(2, minmax(100px, 1fr));
-  -ms-grid-rows: (minmax(100px, 1fr))[auto-fit];
-      grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: repeat(4, 1fr);
   gap: 10px;
   text-align: center;
   cursor: pointer;
@@ -470,18 +466,16 @@ hr:before {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-  }
-  .sOneContainer .container-fluid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(200px, 1fr))[3];
-        grid-template-columns: repeat(3, minmax(200px, 1fr));
-    -ms-grid-rows: (minmax(150px, 1fr))[auto-fit];
-        grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    -ms-grid-columns: (minmax(150px, 1fr))[3];
+        grid-template-columns: repeat(3, minmax(150px, 1fr));
+    -ms-grid-rows: 200px 1fr;
+        grid-template-rows: 200px 1fr;
     padding-left: 0;
     padding-right: 0;
   }
-  .sOneContainer .container-fluid .welcome {
+  .sOneContainer .welcome {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -491,7 +485,7 @@ hr:before {
     -ms-grid-column-align: start;
         justify-self: start;
   }
-  .sOneContainer .container-fluid .welcome h1 {
+  .sOneContainer .welcome h1 {
     font-size: 1.3rem;
     width: 300px;
     line-height: 1.5;
@@ -500,7 +494,7 @@ hr:before {
     border-bottom-right-radius: 20px;
     background-color: rgba(255, 155, 0, 0.7);
   }
-  .sOneContainer .container-fluid .hurryUp {
+  .sOneContainer .hurryUp {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
@@ -523,20 +517,20 @@ hr:before {
     transition: transform .45s ease-in-out, -webkit-transform .45s ease-in-out;
     margin-top: 0;
   }
-  .sOneContainer .container-fluid .hurryUp h2 {
+  .sOneContainer .hurryUp h2 {
     font-size: 2rem;
     margin-bottom: 15px;
   }
-  .sOneContainer .container-fluid .hurryUp:hover {
+  .sOneContainer .hurryUp:hover {
     background-color: rgba(255, 155, 0, 0.7);
     border: 4px solid #6c0375;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-  .sOneContainer .container-fluid .hurryUp:hover #timer div {
+  .sOneContainer .hurryUp:hover #timer div {
     background-color: rgba(108, 3, 117, 0.664);
   }
-  .sOneContainer .container-fluid .hurryUp #timer div {
+  .sOneContainer .hurryUp #timer div {
     -webkit-box-shadow: 15px 15px 16px #0D0D0D;
             box-shadow: 15px 15px 16px #0D0D0D;
     background-color: rgba(255, 155, 0, 0.7);
@@ -549,7 +543,7 @@ hr:before {
     margin-right: 10px;
     font-family: "Pattaya", sans-serif;
   }
-  .sOneContainer .container-fluid .hurryUp #timer div span {
+  .sOneContainer .hurryUp #timer div span {
     display: block;
     height: 100%;
     margin-top: -2px;
@@ -557,7 +551,7 @@ hr:before {
     font-weight: 500;
     font-family: "Henny Penny", cursive;
   }
-  .sOneContainer .container-fluid .weather {
+  .sOneContainer .weather {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3/4;
@@ -575,16 +569,16 @@ hr:before {
         justify-self: end;
     margin-top: 0;
   }
-  .sOneContainer .container-fluid .weather h1 {
+  .sOneContainer .weather h1 {
     font-size: 1.5rem;
   }
-  .sOneContainer .container-fluid .weather h2 {
+  .sOneContainer .weather h2 {
     font-size: 1rem;
   }
-  .sOneContainer .container-fluid .weather p {
+  .sOneContainer .weather p {
     font-size: 1rem;
   }
-  .sOneContainer .container-fluid .contentBox {
+  .sOneContainer .contentBox {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
@@ -604,42 +598,46 @@ hr:before {
     border-radius: 50px;
     text-shadow: 0 0 16px #8cbf3f;
   }
-  .sOneContainer .container-fluid .contentBox:hover {
+  .sOneContainer .contentBox:hover {
     background-color: rgba(255, 255, 255, 0.7);
   }
-  .sOneContainer .container-fluid .contentBox h1 {
+  .sOneContainer .contentBox h1 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 0;
   }
-  .sOneContainer .container-fluid .contentBox h1 hr {
+  .sOneContainer .contentBox h1 hr {
     width: 40%;
     margin: 0 auto;
   }
-  .sOneContainer .container-fluid .contentBox h2 {
+  .sOneContainer .contentBox h2 {
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 0;
   }
-  .sOneContainer .container-fluid .contentBox p {
+  .sOneContainer .contentBox p {
     font-size: 1.1rem;
   }
-  .sOneContainer .container-fluid .trivia {
+  .sOneContainer .trivia {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
-    -ms-grid-row: 3;
+    -ms-grid-row: 2;
     -ms-grid-row-span: 1;
-    grid-row: 3/4;
+    grid-row: 2/3;
     font-size: 1rem;
     line-height: 0;
     border-radius: 0;
     border-bottom-left-radius: 20px;
     width: 300px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
+    margin-top: 250px;
   }
-  .sOneContainer .container-fluid .trivia .trivia-btn {
+  .sOneContainer .trivia .trivia-btn {
     height: 50px;
     padding: 30px;
     border-radius: 50px;
@@ -647,7 +645,7 @@ hr:before {
     -webkit-box-shadow: 0 0 16px black;
             box-shadow: 0 0 16px black;
   }
-  .sOneContainer .container-fluid .trivia .trivia-btn:hover {
+  .sOneContainer .trivia .trivia-btn:hover {
     background-color: rgba(43, 255, 0, 0.7);
   }
   #topBtn {
@@ -684,15 +682,15 @@ hr:before {
             transform: scale(1.2);
   }
   .sponserSection {
-    height: 100vh;
+    height: auto;
   }
   .sponserSection .container-fluid .sponsers {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(100px, 1fr))[3];
         grid-template-columns: repeat(3, minmax(100px, 1fr));
-    -ms-grid-rows: (minmax(50px, 1fr))[auto-fit];
-        grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+    -ms-grid-rows: (minmax(100px, 1fr))[auto-fit];
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
     text-align: center;
     -webkit-column-gap: 180px;
             column-gap: 180px;
@@ -725,20 +723,13 @@ hr:before {
     text-shadow: 0 0 3px #ff9b00;
   }
   .sponserSection .container-fluid .sponsers .sponser {
-    -ms-grid-row-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
         align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: minmax(100px, 1fr);
-        grid-template-columns: minmax(100px, 1fr);
-    -ms-grid-rows: minmax(10px, 1fr);
-        grid-template-rows: minmax(10px, 1fr);
-    align-self: center;
-    justify-self: center;
-    width: 100%;
-    height: 100%;
+    width: 330px;
+    height: 330px;
     background-color: rgba(255, 155, 0, 0.3);
     padding: 20px;
     border-radius: 50px;
@@ -753,13 +744,8 @@ hr:before {
             filter: blur(0);
   }
   .sponserSection .container-fluid .sponsers .sponser img {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    width: 70%;
-    height: 70%;
+    width: 250px;
+    height: 250px;
   }
   .sponserSection .container-fluid .sponsers .activateSponser {
     border: 3px solid #6c0375;
@@ -824,8 +810,6 @@ hr:before {
     font-size: 2rem;
   }
   .sponserSection .container-fluid .sponsers .popupContent img {
-    width: 70%;
-    height: 70%;
     margin-left: 10px;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
