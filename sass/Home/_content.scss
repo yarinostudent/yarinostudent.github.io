@@ -358,6 +358,8 @@ hr:before {
             height: 100%;
             max-height: 150px;
             grid-row: 2/3;
+            justify-self: center;
+            align-self: center;
             object-fit: cover;
             object-position: center;
             border-radius: 30px;

@@ -404,6 +404,11 @@ hr:before {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
