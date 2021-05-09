@@ -40,7 +40,7 @@ hr:before {
 }
 
 .homeHeader {
-    background-image: url("/sass/Media/contact-backImg.jpg");
+    background-image: url("/sass/Media/contact-backImgPexels.jpg");
     @include backImg();
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.301);
 }
@@ -49,7 +49,7 @@ hr:before {
     // min-height: 100vh;
     height: auto;
     text-align: center;
-    background-image: url("/sass/Media/contact-backImg.jpg");
+    background-image: url("/sass/Media/contact-backImgPexels.jpg");
     @include backImg();
 
     // .container-fluid {
@@ -389,6 +389,7 @@ hr:before {
     padding: 30px;
 
     .carousel {
+        height: 80vh;
 
         //check2
         .carousel-control-prev,
@@ -398,7 +399,7 @@ hr:before {
         }
 
         .carousel-item {
-            height: 60vh;
+            height: 80vh;
             width: 100vw;
 
 
@@ -417,7 +418,7 @@ hr:before {
     .sOneContainer {
         height: 90vh;
         text-align: center;
-        background-image: url("/sass/Media/contact-backImg.jpg");
+        background-image: url("/sass/Media/contact-backImgPexels.jpg");
         @include backImg();
         display: grid;
         grid-template-columns: repeat(5, minmax(150px, 1fr));
@@ -765,6 +766,7 @@ hr:before {
     .carouselContainer {
 
         .carousel {
+            height: 90vh;
 
             .carousel-control-prev,
             .carousel-control-next {
@@ -773,7 +775,7 @@ hr:before {
             }
 
             .carousel-item {
-                height: 60vh;
+                height: 90vh;
                 width: 100vw;
 
                 h1 {
@@ -784,6 +786,7 @@ hr:before {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                    object-position: center;
                 }
             }
         }
